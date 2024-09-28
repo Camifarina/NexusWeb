@@ -158,7 +158,6 @@ p{
     align-items: center;
     gap: 5rem;
     justify-content: center;
-    
 }
 .quienes_somos_2 .qs2-text{
     display: flex;
@@ -170,7 +169,7 @@ p{
 
 
 .quienes_somos_2 .qs2-img img{
-    width: 25rem;
+    width: 15%;
     border-radius: 2rem;
 }
 .quienes_somos_2 .qs2-img .i1{
@@ -207,18 +206,18 @@ p{
     flex-direction: column;
     gap: 8rem;
 }
-.trabajos .trabajos-img{
-top: 0;    display: flex;
+.trabajos .trabajos-img{  
+    display: flex;
     flex-direction: row;
     gap: 10rem;
     justify-content: center;
 }
 .trabajos .trabajos-img img{
-    width: 35rem;
+    width: 70%;
     border-radius: 2rem;
 }
 .trabajos .trabajos-img img:hover{
-    width: 38rem;
+    width: 75%;
 }
 .trabajos .trabajos-text{
     display: flex;
