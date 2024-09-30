@@ -26,6 +26,32 @@
             </ul>
         </div>
     </div>
+    <div class="codigo" id="codigo">
+        <div class="cod-text">
+            <span class="material-symbols-rounded">lock</span>
+            <h2>ACCESO RESTRINGIDO</h2>
+        </div>
+        <div id="codigo-section">
+            <h3>Ingrese la clave</h3>
+            <div class="clave-cont">
+                <input type="text" id="codigo-input" maxlength="4" placeholder="0000" autocomplete="off">
+                <button id="verificar-btn" onclick="verificarCodigo()"><span class="material-symbols-rounded">expand_circle_right</span></button>
+            </div>
+            <p id="mensaje-error" style="color: red; display: none;">Código incorrecto. Inténtalo de nuevo.</p>
+        </div>
+        <!-- <form id="form-codigo" action="#">
+            <div class="form-cont">
+                <div class="imput-wrap">
+                    <p placeholder="Numero">Ingrese la clave</p>
+                    <p><input type="number" id="numero" required></p>
+                </div>
+                <div class="boton-conf">
+                    <input type="submit" value="Confirmar" class="btn-conf">
+                </div>
+            </div>
+        </form> -->
+
+    </div>
     <div class="inicio" id="in">
         <div class="in-contenido">
         <div class="inicio-texto">

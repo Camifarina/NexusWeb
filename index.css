@@ -4,7 +4,8 @@
     --violeta: #59387D;
     --lila: #9747FF; 
     --verde: #CAFFCA; 
-    --rosa: #D69FC8; 
+    --rosa: #D69FC8;
+    --violetaOscuro: #361955;  
 
 }
 html, body{
@@ -42,7 +43,7 @@ p{
     padding: 2rem 12rem;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 4;
 }
 .header .logo img{
     width: 20%;
@@ -65,6 +66,85 @@ p{
 }
 .header .secciones a:hover{
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.95);
+}
+
+.codigo{
+    background-color: #C4C4C4;
+    color: white;
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.codigo .cod-text{
+    color: var(--violeta);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.cod-text span{
+    font-size: 15rem;
+}
+.cod-text h2{
+    font-size: 4rem;
+}
+
+
+#codigo-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: left;
+    align-items: flex-start;
+}
+#codigo-section .clave-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#codigo-input {
+    padding: 1.5rem;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0px;
+    border-radius: 2rem;
+    border-color: var(--violeta);
+    background-color: var(--violeta);
+    color: white;
+    border-style: none;
+    letter-spacing: 1rem;
+}
+
+#codigo-input:hover{
+    border-color: var(--violeta);
+}
+
+#codigo-section #verificar-btn{
+    margin: 0%;
+    padding: 0%;
+    font-style: none;
+    list-style: none;
+    box-sizing: none;
+    box-shadow: none;
+    border-style: none;
+    background-color: transparent;
+    color: var(--violeta);
+}
+#verificar-btn .material-symbols-rounded{
+    font-size: 5rem;
 }
 
 
