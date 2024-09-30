@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
 
     <title>Nexus</title>
 </head>
@@ -24,37 +27,48 @@
         </div>
     </div>
     <div class="inicio" id="in">
-        <div class="countdown">
-            <div class="count-text">
-                <p id="dias">00</p>
-                <span>Días</span>
+        <div class="in-contenido">
+        <div class="inicio-texto">
+        <div>
+            <h2>El futuro se aproxima</h2>
+        </div>
+        <div class="fecha" style="display: none;">
+            <span id="fecha">1/1/2025</span>
+        </div>
+        <div class="cuenta-atras" id="cuenta-atras">
+            <div class="grupo">
+                <p class="grande" id="dias">00</p>
+                <p class="chico">DÍAS</p>
             </div>
-            <div class="count-text">
-                <p id="horas">00</p>
-                <span>Horas</span>
+            <div class="grupo">
+                <p class="grande" id="horas">00</p>
+                <p class="chico">HORAS</p>
             </div>
-            <div class="count-text">
-                <p id="minutos">00</p>
-                <span>Minutos</span>
+            <div class="grupo">
+                <p class="grande" id="minutos">00</p>
+                <p class="chico">MINS.</p>
             </div>
-            <div class="count-text">
-                <p id="segundos">00</p>
-                <span>Segundos</span>
+            <div class="grupo">
+                <p class="grande" id="segundos">00</p>
+                <p class="chico">SEGS.</p>
             </div>
+        </div>
         </div>
         <div>
             <span class="material-symbols-rounded"><a href="#qs">keyboard_arrow_down </a></span>
         </div>
     </div>
-    <div class="video-inicio">
-        <video muted autoplay loop>
-            <source src="./assets/vid/Fondo Tecnológico HD.mp4" type="video/mp4">
-        </video>
-        <div class="capa"></div>
+        <div class="video-inicio">
+            <video muted autoplay loop>
+                <source src="./assets/vid/Fondo Tecnológico HD.mp4" type="video/mp4">
+            </video>
+            <div class="capa"></div>
+        </div>
     </div>
+
     <div class="quienes_somos_1" id="qs">
         <div class="qs-cont">
-            <img src="./assets/img/trenes.jpeg" alt="">
+            <img src="./assets/img/qs1_1.png" alt="">
             <div class="qs-text">
                 <h1>Quiénes somos</h1>
                 <p>NEXUS fue fundada en 2022 con una misión clara: transformar la forma en que el mundo genera y consume energía. Desde entonces, hemos sido pioneros en el desarrollo de tecnologías energéticas avanzadas que no solo satisfacen las necesidades de hoy, sino que también anticipan las demandas del futuro.</p>
@@ -65,49 +79,69 @@
                 <h2>Misión y valores</h2>
                 <p>En NEXUS, estamos dedicados a liberar al mundo de su dependencia de los combustibles fósiles, ofreciendo energía que es eficiente, accesible y ecológicamente responsable. Valoramos la innovación, la sostenibilidad y la integridad en todo lo que hacemos.</p>
             </div>
-            <img src="./assets/img/trenes.jpeg" alt="">
+            <img src="./assets/img/qs1_2.png" alt="">
         </div>
     </div>
+
+
     <div class="quienes_somos_2">
-        <div class="qs2-img">
-            <img class="i1" src="./assets/img/trenes.jpeg" alt="">
-            <img class="i2" src="./assets/img/trenes.jpeg" alt="">
-            <img class="i3" src="./assets/img/trenes.jpeg" alt="">
-            <img class="i4" src="./assets/img/trenes.jpeg" alt="">
-            <img class="i5" src="./assets/img/trenes.jpeg" alt="">
+        <section class="scroll-section" id="triggerSection">
+        <div class="qs2-img hidden-content-img">
+            <img class="i1" src="./assets/img/qs2_1.png" alt="">
+            <img class="i2" src="./assets/img/qs2_2.png" alt="">
+            <img class="i3" src="./assets/img/qs2_3.png" alt="">
+            <img class="i4" src="./assets/img/qs2_4.png" alt="">
+            <img class="i5" src="./assets/img/qs2_5.png" alt="">
         </div>
-        <div class="qs2-text">
+        <div class="qs2-text hidden-content-tex">
             <h2>Nuestro equipo</h2>
             <p>Nuestro equipo está compuesto por científicos, ingenieros y visionarios con más de una década de experiencia en el campo energético. Juntos, trabajamos para liderar la transición hacia un futuro más sostenible y tecnológicamente avanzado.</p>
         </div>
+        </section>
     </div>
+
     <div class="como_funciona" id="cf">
         <h1>¿Cómo funciona?</h1>
-        <div class="cards-cont">
-            <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide">
-                    <img class="img" src="" alt="">
-                    <div class="title"><h3>Tecnología de Energía Cuántica</h3></div>
-                    <div class="tex"><p>El futuro es ahora en NEXUS, estamos aprovechando la mecánica cuántica para generar energía de manera más eficiente y limpia. Nuestra tecnología captura las fluctuaciones energéticas a nivel subatómico, convirtiéndolas en energía utilizable sin producir residuos contaminantes.</p></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Cada card dentro del carrusel -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img class="img" src="./assets/img/cf1.png" alt="">
+                        <div class="title"><h3>Tecnología de Energía Cuántica</h3></div>
+                        <div class="tex"><p>El futuro es ahora en <span class="resaltar">NEXUS</span>, estamos aprovechando la mecánica cuántica para generar energía de manera más eficiente y limpia. Nuestra tecnología captura las fluctuaciones energéticas a nivel subatómico, convirtiéndolas en energía utilizable sin producir residuos contaminantes.</p></div>
+                    </div>
                 </div>
-                <div class="card swiper-slide">
-                    <img class="img" src="" alt="">
-                    <div class="title"><h3>Microrredes inteligentes</h3></div>
-                    <div class="tex"><p>Nuestras microrredes inteligentes optimizan la distribución de energía, asegurando un suministro constante y fiable para hogares y negocios. Estas redes se adaptan en tiempo real a las variaciones en la demanda y la producción de energía.</p></div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img class="img" src="./assets/img/cf2.png" alt="">
+                        <div class="title"><h3>Microrredes inteligentes</h3></div>
+                        <div class="tex"><p>Nuestras microrredes inteligentes <span class="resaltar">optimizan</span> la distribución de energía, asegurando un suministro constante y fiable para hogares y negocios. Estas redes se adaptan en tiempo real a las variaciones en la demanda y la producción de energía.</p></div>
+                    </div>
                 </div>
-                <div class="card swiper-slide">
-                    <img class="img" src="" alt="">
-                    <div class="title"><h3>Sostenibilidad en cada paso</h3></div>
-                    <div class="tex"><p>Desde la producción hasta la distribución, todos nuestros procesos son sostenibles. Usamos materiales reciclables y fuentes de energía renovables para minimizar nuestro impacto ambiental.</p></div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img class="img" src="./assets/img/cf3.png" alt="">
+                        <div class="title"><h3>Sostenibilidad en cada paso</h3></div>
+                        <div class="tex"><p>Desde la producción hasta la distribución, todos nuestros procesos son <span class="resaltar">sostenibles.</span> Usamos materiales reciclables y fuentes de energía renovables para minimizar nuestro impacto ambiental.</p></div>
+                    </div>
                 </div>
-                <div class="card swiper-slide">
-                    <img class="img" src="" alt="">
-                    <div class="title"><h3>Proyectos de Investigación y Desarrollo</h3></div>
-                    <div class="tex"><p>Estamos siempre innovando. Nuestros laboratorios de I+D se dedican a mejorar la eficiencia energética y a reducir aún más nuestra huella de carbono.</p></div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img class="img" src="./assets/img/cf4.png" alt="">
+                        <div class="title"><h3>Proyectos de Investigación y Desarrollo</h3></div>
+                        <div class="tex"><p>Estamos siempre innovando. Nuestros laboratorios de I+D se dedican a mejorar la eficiencia energética y a reducir aún más nuestra <span class="resaltar">huella de carbono.</span></p></div>
+                    </div>
                 </div>
             </div>
+            <!-- Agrega flechas de navegación si deseas -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Agrega paginación si deseas -->
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </div>
+
     <div class="trabajos" id="tr">
         <h1>Trabajos</h1>
         <div class="trabajos-text">
@@ -117,15 +151,15 @@
         <div class="trabajos-img">
             <div class="cont1">
                 <h3>Trenes del Futuro</h3>
-                <img src="./assets/img/trenes.jpeg" alt="">
+                <img src="./assets/img/t1.png" alt="">
             </div>
             <div class="cont1">
                 <h3>Plantas de energía cuántica</h3>
-                <img src="./assets/img/trenes.jpeg" alt="">
+                <img src="./assets/img/t2.png" alt="">
             </div>
             <div class="cont1">
                 <h3>Microrredes inteligentes</h3>
-                <img src="./assets/img/trenes.jpeg" alt="">
+                <img src="./assets/img/t3.png" alt="">
             </div>
         </div>
     </div>
@@ -140,6 +174,34 @@
             <p>Estamos preparando una serie de innovaciones que cambiarán la forma en que entendemos y utilizamos la energía. Mantente atento a nuestro próximo anuncio, que promete redefinir los estándares de la industria.</p>
         </div>
         <div class="carrusel">
+            <div class="swiper carrusel2">
+                <div class="swiper-wrapper">
+                    <!-- Cada card dentro del carrusel -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./assets/img/i1.png" alt="innovacion1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./assets/img/i2.png" alt="innovacion2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./assets/img/i3.png" alt="innovacion3">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="./assets/img/i4.png" alt="innovacion4">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
     <div class="footer" id="fo">
@@ -160,8 +222,9 @@
         </div>
     </div>
     
-    <script> src= "script.js"</script>
-
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

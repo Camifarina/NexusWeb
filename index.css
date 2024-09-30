@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --violeta: #59387D;
+    --lila: #9747FF; 
+    --verde: #CAFFCA; 
+    --rosa: #D69FC8; 
+
+}
 html, body{
     font-family: "Montserrat", sans-serif;
     font-size: 10px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 h1{
     font-size: 4rem;
@@ -62,8 +70,9 @@ p{
 }
 
 .inicio{
-    padding: 12rem;
-    padding-top: 25rem;
+    padding-top: 25rem;  
+}
+.inicio .in-contenido{
     color: #D9D9D9;
     display: flex;
     flex-direction: column;
@@ -86,25 +95,36 @@ p{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(16, 72, 33, 0.2);
+
 }
-.inicio .countdown{
+.inicio .cuenta-atras{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15rem;
+    gap: 8rem;
+}
+.inicio h2{
     font-size: 2.5rem;
 }
-.inicio .countdown p{
-    font-size: 8.5rem;
-}
-.inicio .countdown .count-text{
+
+.inicio .cuenta-atras .grupo{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
+.cuenta-atras .grupo p.grande{
+    font-size: 13rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.cuenta-atras .grupo p.chico{
+    font-size: 4rem;
+    font-weight: 200;
+}
+
 .inicio .material-symbols-rounded{
     font-size: 10rem;
     padding: 0%;
@@ -119,45 +139,49 @@ p{
 }
 
 .quienes_somos_1{
+    padding: 12rem;
     padding-top: 20rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    background-color: #F2F2F2;
+    background: linear-gradient(160deg, #CAFFCA 13.24%, #D69FC8 112.99%);
 
 }
-.quienes_somos_1 img{
-    width: 40rem;
-    border-radius: 3rem;
+.qs-cont img{
+    width: 80%;
+}
+.qs-text h1{
+    color: var(--violeta);
+}
+.qs-text h2{
+    color: var(--lila);
 }
 .quienes_somos_1 .qs-cont{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 }
 .quienes_somos_1 .qs-text{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
+
 .quienes_somos_2{
     padding: 12rem;
     padding-top: 20rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
+    padding-bottom: 18rem;
     background-color: #F2F2F2;
 }
 .quienes_somos_2 .qs2-img{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 5rem;
-    justify-content: center;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
 }
 .quienes_somos_2 .qs2-text{
     display: flex;
@@ -165,43 +189,108 @@ p{
     gap: 2rem;
     padding-left: 20rem;
     padding-right: 20rem;
+    text-align: center;
+}
+.quienes_somos_2 .qs2-text h2{
+    color: var(--violeta);
+}
+
+.qs2-img img{
+    width: 18%;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.scroll-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    align-items: center;
+}
+.hidden-content-img {
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+.hidden-content-tex {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+/* Cuando se activa la clase 'visible' */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
-.quienes_somos_2 .qs2-img img{
-    width: 15%;
-    border-radius: 2rem;
-}
-.quienes_somos_2 .qs2-img .i1{
-    animation-duration: 2s;
-    animation-name: slidein;
-}
-.quienes_somos_2 .qs2-img .i2{
-    animation-duration: 2.1s;
-    animation-name: slidein;
-}
-.quienes_somos_2 .qs2-img .i3{
-    animation-duration: 2.2s;
-    animation-name: slidein;
-}
-.quienes_somos_2 .qs2-img .i4{
-    animation-duration: 2.3s;
-    animation-name: slidein;
-}
-.quienes_somos_2 .qs2-img .i5{
-    animation-duration: 2.4s;
-    animation-name: slidein;
-}
 
 .como_funciona{
-    background-color: black;
+    background-color: #59387D;
     color: white;
     padding: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-color: #F2F2F2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 7rem 0px 7rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    height: 65rem; 
+}
+.card {
+    width: 100%; /* Ancho fijo para todas las cards */
+    height: 100%; /* Usa el 100% de la altura de la slide */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+}
+
+.card img{
+    border-radius: 0px 7rem 0px 7rem;
+    width: 100%;
+    object-fit: cover;
+}
+.card div{
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+.card .title{
+    color: var(--violeta);
+}
+.card .tex p{
+    font-weight: 200;
+    font-size: 2rem;
+}
+span.resaltar{
+    color: var(--violeta);
+    font-weight: 500;
 }
 
 .trabajos{
-    background-color: #F2F2F2;
-    padding: 12rem;
+    background: linear-gradient(160deg, #CAFFCA 13.24%, #D69FC8 112.99%);
+    padding: 15rem 12rem;
     display: flex;
     flex-direction: column;
     gap: 8rem;
@@ -210,25 +299,46 @@ p{
     display: flex;
     flex-direction: row;
     gap: 10rem;
-    justify-content: center;
+    justify-content: space-between;
 }
-.trabajos .trabajos-img img{
-    width: 70%;
-    border-radius: 2rem;
+.cont1{
+    position: relative;
+    width: 40rem;
 }
-.trabajos .trabajos-img img:hover{
-    width: 75%;
+.cont1 img{
+    width: 100%;
+    border-radius: 3rem;
+    cursor: pointer;
+    object-fit: cover;
 }
+.cont1:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.855);
+    transition: 0.5s ease;
+    border-radius: 3rem;
+} 
+.cont1 h3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding: 3rem;
+}
+
 .trabajos .trabajos-text{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.trabajos .trabajos-img .cont1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.trabajos h1{
+    color: var(--violeta);
 }
+.trabajos-text h2{
+    color: var(--lila);
+}
+
 
 .innovacion{
     padding: 12rem;
@@ -241,9 +351,23 @@ p{
     flex-direction: column;
     gap: 2rem;
 }
+.innovacion h1{
+    color: var(--violeta);
+}
+.innovacion h2{
+    color: var(--lila);
+}
+
+.carrusel2 .swiper-slide{
+    border-radius: 0%;
+    height: 100%;
+}
+.carrusel2 .card img{
+    border-radius: 0%;
+}
 
 .footer{
-    background-color: black;
+    background-color: #1E1E1E;
     color: #D9D9D9;
     padding: 12rem;
     padding-top: 8rem;
@@ -266,6 +390,10 @@ p{
     flex-direction: row;
     gap: 2rem;
     align-items: center;
+}
+.f-text span{
+    color: var(--lila);
+    font-size: 3rem;
 }
 
 
