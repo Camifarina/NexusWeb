@@ -543,7 +543,7 @@ span.resaltar{
         gap: 4.5rem;
     }
     .quienes_somos_1{
-        padding: 20rem 2rem;
+        padding: 15rem 2rem;
         gap: 6rem;
     }
     .qs-cont img{
@@ -551,7 +551,7 @@ span.resaltar{
     }
 
     .quienes_somos_2{
-        padding: 20rem 2rem;
+        padding: 15rem 2rem;
     }
     .quienes_somos_2 .qs2-img{
         gap: 2rem;
@@ -569,12 +569,12 @@ span.resaltar{
         gap: 10rem;
     }
     .como_funciona{
-        padding: 20rem 2rem;
+        padding: 15rem 2rem;
         gap: 10rem;
     }
 
     .trabajos{
-        padding: 20rem 2rem;
+        padding: 15rem 2rem;
     }
     .trabajos .trabajos-img{  
         display: flex;
@@ -585,7 +585,7 @@ span.resaltar{
     }
 
     .innovacion{
-        padding: 20rem 2rem;
+        padding: 15rem 2rem;
         gap: 10rem;
     }
     
