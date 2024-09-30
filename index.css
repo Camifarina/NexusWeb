@@ -39,9 +39,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding: 2rem 12rem;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -68,6 +66,7 @@ p{
 .header .secciones a:hover{
     text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.95);
 }
+
 
 .inicio{
     padding-top: 25rem;  
@@ -145,7 +144,6 @@ p{
     flex-direction: column;
     gap: 5rem;
     background: linear-gradient(160deg, #CAFFCA 13.24%, #D69FC8 112.99%);
-
 }
 .qs-cont img{
     width: 80%;
@@ -405,6 +403,104 @@ span.resaltar{
 
     }
 
-@media screen and (min-width: 1000px){
+
+@media screen and (min-width: 1001) {
+    .mobile-only {
+        display: none;
+    }
+
+    }
+
+@media screen and (max-width: 1000px) {
+    .desktop-only {
+        display: none;
+    }
+    html {
+        font-size: 8px;
+        width: 100%;
+    }
+    .header{
+        padding: 2rem 2rem;
+
+    }
+    .header .logo img{
+        width: 15%;
+    }
+    .inicio .cuenta-atras{
+        gap: 4rem;
+    }
+    .inicio-texto{
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .cuenta-atras .grupo p.grande{
+        font-size: 7rem;
+    }
+    .cuenta-atras .grupo p.chico{
+        font-size: 2rem;
+    }
+    .inicio .in-contenido{
+        gap: 40rem;
+    }
+
+    .quienes_somos_1 .qs-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+    .quienes_somos_1{
+        padding: 25rem 2rem;
+    }
+    .qs-cont img{
+        width: 100%;
+    }
+
+    .quienes_somos_2{
+        padding: 2rem;
+        padding-top: 20rem;
+        padding-bottom: 18rem;
+    }
+    .quienes_somos_2 .qs2-img{
+        gap: 2rem;
+        justify-content: center;
+    }
+    .quienes_somos_2 .qs2-text{
+        gap: 2rem;
+        padding: 0px 2rem;
+        text-align: left;
+    }
+    .qs2-img img{
+        width: 45%;
+    }
+    .scroll-section {
+        gap: 10rem;
+    }
+    .como_funciona{
+        padding: 20rem 2rem;
+        gap: 10rem;
+    }
+
+    .trabajos{
+        padding: 20rem 2rem;
+    }
+    .trabajos .trabajos-img{  
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .innovacion{
+        padding: 20rem 2rem;
+        gap: 10rem;
+    }
+    
+    .footer{
+        padding: 10rem 2rem;
+    }
 
 }
