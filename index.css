@@ -540,10 +540,11 @@ span.resaltar{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3rem;
+        gap: 4.5rem;
     }
     .quienes_somos_1{
         padding: 20rem 2rem;
+        gap: 6rem;
     }
     .qs-cont img{
         width: 100%;
