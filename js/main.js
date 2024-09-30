@@ -136,20 +136,25 @@ const observer = new IntersectionObserver(entries => {
 // Observar la sección que activa el efecto
 observer.observe(section);
 
+
 function verificarCodigo() {
     const codigoCorrecto = "1234"; // El código correcto
     const codigoIngresado = document.getElementById("codigo-input").value;
     const mensajeError = document.getElementById("mensaje-error");
     const codigoSection = document.getElementById("codigo");
-    const contenidoSecreto = document.getElementById("contenido-secreto");
+    const inicioSection = document.getElementById("in");
 
     // Verifica si el código ingresado es correcto
     if (codigoIngresado === codigoCorrecto) {
-        // Si el código es correcto, oculta la sección del código
+        // Oculta la sección del código completamente (sin dejar espacio)
         codigoSection.style.display = "none";
+
+        // Muestra la sección de inicio
+        inicioSection.classList.remove("oculto");
     } else {
         // Si el código es incorrecto, muestra un mensaje de error
         mensajeError.style.display = "block";
     }
 }
+
 
