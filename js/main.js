@@ -1,4 +1,4 @@
-let fecha = new Date(2024, 10, 15, 16, 0);
+let fecha = new Date(2024, 10, 15, 0, 0);
 //                  año, mes, día, hora, minuto
 let msFecha = fecha.getTime();
 
@@ -143,7 +143,7 @@ function verificarCodigo() {
     const mensajeError = document.getElementById("mensaje-error");
     const codigoSection = document.getElementById("codigo");
     const inicioSection = document.getElementById("in");
-
+    
     // Verifica si el código ingresado es correcto
     if (codigoIngresado === codigoCorrecto) {
         // Oculta la sección del código completamente (sin dejar espacio)
@@ -151,10 +151,12 @@ function verificarCodigo() {
 
         // Muestra la sección de inicio
         inicioSection.classList.remove("oculto");
+        //inicioSection.style,display= "block";
     } else {
         // Si el código es incorrecto, muestra un mensaje de error
         mensajeError.style.display = "block";
     }
 }
+
 
 

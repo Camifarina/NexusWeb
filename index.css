@@ -92,10 +92,10 @@ p{
     align-items: center;
 }
 .cod-text span{
-    font-size: 10rem;
+    font-size: 12rem;
 }
 .cod-text h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 #codigo-section h3{
     font-size: 2rem;
@@ -151,15 +151,13 @@ p{
 
 
 .inicio{
-    padding-top: 25rem; 
+    margin: 0%; 
     text-align: center; 
+    height: 100vh; /* Asegura que la sección ocupe el 100% de la altura visible de la pantalla */
+    position: relative; /* Asegura que la sección y su contenido se ubiquen correctamente */
+    align-items: center;
 }
-.inicio .flecha span{
-    text-align: center;
-    z-index: 3;
-    position: relative;
-    padding-top: 10rem;
-}
+
 .inicio .in-contenido{
     color: #D9D9D9;
     display: flex;
@@ -167,15 +165,21 @@ p{
     align-items: center;
     gap: 10rem;
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    padding-top: 18%;
 }
-.video-inicio video{
+.inicio .video-inicio{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    z-index: 1; 
+}
+.video-inicio video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para cubrir la pantalla sin distorsionar el video */
 }
 .video-inicio .capa{
     position: absolute;
@@ -184,7 +188,7 @@ p{
     width: 100%;
     height: 100%;
     background-color: rgba(16, 72, 33, 0.2);
-
+    z-index: 2;
 }
 .inicio .cuenta-atras{
     display: flex;
@@ -215,6 +219,13 @@ p{
     font-weight: 200;
 }
 
+.inicio .flecha{
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    padding: 10rem 0rem;
+}
+
 .inicio .material-symbols-rounded{
     font-size: 10rem;
     padding: 0%;
@@ -235,15 +246,13 @@ p{
     flex-direction: column;
     gap: 5rem;
     background: linear-gradient(160deg, #CAFFCA 13.24%, #D69FC8 112.99%);
+    position: relative;
 }
 .qs-cont img{
     width: 80%;
 }
-.qs-text h1{
+.qs-text h1, .qs-text h2 {
     color: var(--violeta);
-}
-.qs-text h2{
-    color: var(--lila);
 }
 .quienes_somos_1 .qs-cont{
     display: flex;
@@ -313,7 +322,6 @@ p{
     transition: opacity 0.5s ease, transform 0.8s ease;
 }
 
-/* Cuando se activa la clase 'visible' */
 .visible {
     opacity: 1;
     transform: translateY(0);
@@ -349,7 +357,7 @@ p{
 }
 .card {
     width: 100%; /* Ancho fijo para todas las cards */
-    height: 100%; /* Usa el 100% de la altura de la slide */
+    height: 100%; 
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -516,6 +524,9 @@ span.resaltar{
     }
     .header .logo img{
         width: 12%;
+    }
+    .inicio {
+        height: auto; /* Para que en pantallas pequeñas ajuste el tamaño */
     }
     .inicio .cuenta-atras{
         gap: 4rem;
