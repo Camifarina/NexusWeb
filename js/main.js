@@ -130,7 +130,7 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, {
-    threshold: 0.9  // El contenido aparece cuando el 90% de la sección es visible
+    threshold: 0.4  // El contenido aparece cuando el 40% de la sección es visible
 });
 // Observar la sección que activa el efecto
 observer.observe(section);
@@ -138,7 +138,7 @@ observer.observe(section);
 
 /* ---------- VERIFICACIÓN DE CÓDIGO ---------- */
 function verificarCodigo() {
-    const codigoCorrecto = "1234"; // El código correcto
+    const codigoCorrecto = "1511"; // El código correcto
     const codigoIngresado = document.getElementById("codigo-input").value;
     const mensajeError = document.getElementById("mensaje-error");
     const codigoSection = document.getElementById("codigo");
