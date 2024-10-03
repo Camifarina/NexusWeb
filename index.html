@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="index.css" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
@@ -14,6 +13,7 @@
 </head>
 <body>
 
+    <!-- ---------- HEADER ---------- -->
     <nav class="header">
         <a href="#" class="enlace">
             <img class="logo" src="./assets/img/logoBlanco.png" alt="logo Nexus">
@@ -32,21 +32,7 @@
         </ul>
     </nav>
 
-    <!-- <div class="header">
-        <div class="logo"><img src="./assets/img/logoBlanco.png" alt="Logo Nexus"></div>
-        <div class="desktop-only">
-            <ul class="secciones">
-                <li ><a href="#in">INICIO</a></li>
-                <li ><a href="#qs">QUIÉNES SOMOS</a></li>
-                <li ><a href="#cf">CÓMO FUNCIONA</a></li>
-                <li ><a href="#tr">TRABAJOS</a></li>
-                <li ><a href="#inn">INNOVACIÓN</a></li>
-                <li ><a href="#fo">CONTACTO</a></li>
-            </ul>
-        </div>
-    </div> -->
-
-
+    <!-- ---------- CÓDIGO DE INGRESO ---------- -->
     <div class="codigo" id="codigo">
         <div class="cod-text">
             <span class="material-symbols-rounded">lock</span>
@@ -64,40 +50,39 @@
         </div>
     </div>
 
-
+    <!-- ---------- INICIO / CUENTA REGRESIVA ---------- -->
     <div class="inicio oculto" id="in">
         <div class="in-contenido">
-        <div class="inicio-texto">
-        <div>
-            <h2>El futuro se aproxima</h2>
-        </div>
-        <div class="fecha" style="display: none;">
-            <span id="fecha">1/1/2025</span>
-        </div>
-        <div class="cuenta-atras" id="cuenta-atras">
-            <div class="grupo">
-                <p class="grande" id="dias">00</p>
-                <p class="chico">DÍAS</p>
+            <div class="inicio-texto">
+                <div>
+                    <h2>El futuro se aproxima</h2>
+                </div>
+                <div class="fecha" style="display: none;">
+                    <span id="fecha">1/1/2025</span>
+                </div>
+                <div class="cuenta-atras" id="cuenta-atras">
+                    <div class="grupo">
+                        <p class="grande" id="dias">00</p>
+                        <p class="chico">DÍAS</p>
+                    </div>
+                    <div class="grupo">
+                        <p class="grande" id="horas">00</p>
+                        <p class="chico">HORAS</p>
+                    </div>
+                    <div class="grupo">
+                        <p class="grande" id="minutos">00</p>
+                        <p class="chico">MINS.</p>
+                    </div>
+                    <div class="grupo">
+                        <p class="grande" id="segundos">00</p>
+                        <p class="chico">SEGS.</p>
+                    </div>
+                </div>
             </div>
-            <div class="grupo">
-                <p class="grande" id="horas">00</p>
-                <p class="chico">HORAS</p>
-            </div>
-            <div class="grupo">
-                <p class="grande" id="minutos">00</p>
-                <p class="chico">MINS.</p>
-            </div>
-            <div class="grupo">
-                <p class="grande" id="segundos">00</p>
-                <p class="chico">SEGS.</p>
-            </div>
         </div>
+        <div class="flecha">
+            <span class="material-symbols-rounded"><a href="#qs">keyboard_arrow_down </a></span>
         </div>
-        
-    </div>
-    <div class="flecha">
-        <span class="material-symbols-rounded"><a href="#qs">keyboard_arrow_down </a></span>
-    </div>
         <div class="video-inicio">
             <video muted autoplay loop>
                 <source src="./assets/vid/Fondo Tecnológico HD.mp4" type="video/mp4">
@@ -106,6 +91,7 @@
         </div>
     </div>
 
+    <!-- ---------- SECCIÓN QUIENES SOMOS 1 ---------- -->
     <div class="quienes_somos_1" id="qs">
         <div class="qs-cont">
             <img src="./assets/img/qs1_1.png" alt="">
@@ -123,7 +109,7 @@
         </div>
     </div>
 
-
+    <!-- ---------- SECCIÓN QUIENES SOMOS 2 ---------- -->
     <div class="quienes_somos_2">
         <section class="scroll-section" id="triggerSection">
         <div class="qs2-img hidden-content-img">
@@ -140,11 +126,11 @@
         </section>
     </div>
 
+    <!-- ---------- SECCIÓN CÓMO FUNCIONA ---------- -->
     <div class="como_funciona" id="cf">
         <h1>¿Cómo funciona?</h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Cada card dentro del carrusel -->
                 <div class="swiper-slide">
                     <div class="card">
                         <img class="img" src="./assets/img/cf1.png" alt="">
@@ -174,14 +160,12 @@
                     </div>
                 </div>
             </div>
-            <!-- Agrega flechas de navegación si deseas -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <!-- Agrega paginación si deseas -->
-            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </div>
 
+    <!-- ---------- SECCIÓN TRABAJOS ---------- -->
     <div class="trabajos" id="tr">
         <h1>Trabajos</h1>
         <div class="trabajos-text">
@@ -203,6 +187,8 @@
             </div>
         </div>
     </div>
+
+    <!-- ---------- SECCIÓN INNOVACIÓN ---------- -->
     <div class="innovacion" id="inn">
         <h1>Innovación</h1>
         <div class="in-text">
@@ -216,7 +202,6 @@
         <div class="carrusel">
             <div class="swiper carrusel2">
                 <div class="swiper-wrapper">
-                    <!-- Cada card dentro del carrusel -->
                     <div class="swiper-slide">
                         <div class="card">
                             <img src="./assets/img/i1.png" alt="innovacion1">
@@ -244,6 +229,8 @@
             </div>
         </div>
     </div>
+
+    <!-- ---------- FOOTER ---------- -->
     <div class="footer" id="fo">
         <h1>Contacto</h1>
         <h2>Estamos Aquí para Ti</h2>
@@ -262,7 +249,7 @@
         </div>
     </div>
     
-    
+    <!-- ---------- SCRIPTS ---------- -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
