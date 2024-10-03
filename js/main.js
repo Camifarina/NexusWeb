@@ -158,5 +158,15 @@ function verificarCodigo() {
     }
 }
 
+const menuItems = document.querySelectorAll("nav ul li a");
+const check = document.getElementById("check");
+
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        // Desmarcar el checkbox cuando se haga clic en un enlace
+        check.checked = false;
+    });
+});
+
 
 
