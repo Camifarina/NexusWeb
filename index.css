@@ -13,6 +13,7 @@ html, body{
     font-size: 8px;
     margin: 0px;
     scroll-behavior: smooth;
+    background-color: rgb(24, 50, 31);;
 }
 h1{
     font-size: 4rem;
@@ -456,6 +457,7 @@ span.resaltar{
     display: flex;
     flex-direction: column;
     gap: 8rem;
+    background-color: #F2F2F2;
 }
 .innovacion .in-text{
     display: flex;
@@ -536,13 +538,13 @@ span.resaltar{
         z-index: 5;
     }
     .checkbtn .material-symbols-rounded{
-        font-size: 6rem;
+        font-size: 4rem;
     }
     .enlace{
         z-index: 5;
     }
     .logo{
-        width: 20%;
+        width: 13%;
     }
     ul{
         position: fixed;
