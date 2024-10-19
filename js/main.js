@@ -1,5 +1,5 @@
 /* ---------- CUENTA REGRESIVA ---------- */
-let fecha = new Date(2024, 10, 15, 0, 0);
+let fecha = new Date(2024, 10, 15, 18, 0);
 //                  año, mes, día, hora, minuto
 let msFecha = fecha.getTime();
 
